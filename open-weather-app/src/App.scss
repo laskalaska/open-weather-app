@@ -1,0 +1,93 @@
+.App {
+  padding: 45px 45px;
+}
+
+.default-text {
+  color: #F5F5F5;
+}
+
+.main-container {
+  padding: 52px 67px;
+  border-radius: 10px;
+  border: 1px solid #7D7878;
+  box-shadow: 0px 0px 20px 0px #7D7878;
+
+  .location {
+    color: beige;
+
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+
+    .left-side {
+      .degree {
+        color: #FFC801;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        margin-right: 23px;
+      }
+
+      .description {
+        color: #F5F5F5;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+
+      .feels-like {
+        padding-left: 10px;
+        color: #FFC801;
+      }
+    }
+
+    .right-side {
+      .min-max {
+        color: #D9D9D9;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        //.temp-min {
+        //  font-weight: 600;
+        //}
+        //.temp-max {
+        //  font-weight: 600;
+        //}
+
+        span {
+          font-weight: 600;
+          color: #FFC801;
+        }
+      }
+
+      .humidity {
+        color: #D9D9D9;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        span {
+          font-weight: 600;
+          color: #FFC801;
+        }
+      }
+    }
+  }
+}
+
+body {
+  background-image: url("assets/sunny_clouds.jpg");
+  background-size: cover;
+}
