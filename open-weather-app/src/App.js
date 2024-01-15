@@ -46,7 +46,8 @@ function App() {
                 </div>
                 <div className="right-side">
                     <div className="min-max">
-                        <p className="temp-min">Min: <span>{data.main.temp_max.toFixed()}°C</span> Max: <span>{data.main.temp_min.toFixed()}°C</span></p>
+                        <p className="temp-min">Min: <span>{data.main.temp_max.toFixed()}°C </span></p>
+                        <p className="temp-max">Max: <span>{data.main.temp_min.toFixed()}°C </span></p>
                         {/*<span className="temp-min">Min: {data.main.temp_max}°C </span>*/}
                         {/*<span className="temp-max">Max: {data.main.temp_min}°C</span>*/}
                     </div>

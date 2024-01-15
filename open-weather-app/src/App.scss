@@ -1,3 +1,9 @@
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
 .App {
   padding: 45px 45px;
 }
@@ -24,6 +30,10 @@
   .bottom {
     display: flex;
     justify-content: space-between;
+
+    @include max-screen(700px) {
+      display: block;
+    }
 
     .left-side {
       .degree {
@@ -58,12 +68,19 @@
         font-weight: 500;
         line-height: normal;
 
-        //.temp-min {
-        //  font-weight: 600;
-        //}
-        //.temp-max {
-        //  font-weight: 600;
-        //}
+        .temp-min {
+          display: inline;
+          @include max-screen(430px) {
+            display: inline-block;
+            margin-bottom: 5px;
+          }
+        }
+        .temp-max {
+          display: inline-block;
+          @include max-screen(430px) {
+            margin-top: 5px;
+          }
+        }
 
         span {
           font-weight: 600;
@@ -90,4 +107,12 @@
 body {
   background-image: url("assets/sunny_clouds.jpg");
   background-size: cover;
+  height: 100vh;
 }
+
+
+
+
+//@media (min-width: 768px) and (max-width: 1023px) {
+//  /* Your tablet styles here */
+//}
